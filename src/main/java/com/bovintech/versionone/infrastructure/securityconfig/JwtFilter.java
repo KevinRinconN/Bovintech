@@ -1,8 +1,8 @@
 package com.bovintech.versionone.infrastructure.securityconfig;
 
 
-import com.bovintech.versionone.application.jwt.command.JwtDetailsHandler;
-import com.bovintech.versionone.application.jwt.command.JwtValidateHandler;
+import com.bovintech.versionone.application.auth.query.JwtDetailsHandler;
+import com.bovintech.versionone.application.auth.query.JwtValidateHandler;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
