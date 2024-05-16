@@ -1,8 +1,8 @@
 package com.bovintech.versionone.infrastructure.securityconfig;
 
-import com.bovintech.versionone.infrastructure.user.adapter.jpa.repository.UserRepositoryImp;
-import com.bovintech.versionone.infrastructure.user.adapter.mapper.UserDboMapper;
-import com.bovintech.versionone.infrastructure.user.adapter.model.entity.UserEntity;
+import com.bovintech.versionone.infrastructure.auth.adapter.jpa.repository.UserRepositoryImp;
+import com.bovintech.versionone.infrastructure.auth.adapter.mapper.UserDboMapper;
+import com.bovintech.versionone.infrastructure.auth.adapter.model.entity.UserEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
