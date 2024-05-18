@@ -1,12 +1,8 @@
 package com.bovintech.versionone.infrastructure.beanconfiguration;
 
-import com.bovintech.versionone.domain.auth.service.JwtDetailsService;
-import com.bovintech.versionone.domain.auth.service.JwtGenerateService;
-import com.bovintech.versionone.domain.auth.service.JwtValidateService;
-import com.bovintech.versionone.domain.user.port.repository.UserRepository;
-import com.bovintech.versionone.domain.user.service.UserAuthenticateService;
-import com.bovintech.versionone.domain.user.service.UserCreateService;
-import com.bovintech.versionone.domain.user.service.UserDetailsService;
+import com.bovintech.versionone.domain.auth.port.repository.UserRepository;
+import com.bovintech.versionone.domain.auth.service.*;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

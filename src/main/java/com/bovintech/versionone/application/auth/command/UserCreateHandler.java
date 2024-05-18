@@ -1,9 +1,8 @@
 package com.bovintech.versionone.application.auth.command;
 
 import com.bovintech.versionone.application.auth.mapper.UserRestMapper;
-import com.bovintech.versionone.domain.user.model.dto.User;
-import com.bovintech.versionone.domain.user.model.dto.request.SignUpRequest;
-import com.bovintech.versionone.domain.user.service.UserCreateService;
+import com.bovintech.versionone.domain.auth.model.dto.request.SignUpRequest;
+import com.bovintech.versionone.domain.auth.service.UserCreateService;
 import com.bovintech.versionone.infrastructure.auth.adapter.model.response.UserRest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
