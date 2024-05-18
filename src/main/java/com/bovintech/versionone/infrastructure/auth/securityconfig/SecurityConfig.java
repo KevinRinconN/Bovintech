@@ -1,4 +1,4 @@
-package com.bovintech.versionone.infrastructure.securityconfig;
+package com.bovintech.versionone.infrastructure.auth.securityconfig;
 
 
 import lombok.RequiredArgsConstructor;
