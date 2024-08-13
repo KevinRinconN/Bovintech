@@ -6,9 +6,7 @@ import lombok.Getter;
 
 @Getter
 public class UserAlreadyExitsException extends GlobalExeception {
-
     private final String errorMessage = "El usuario ya existe";
-
     public UserAlreadyExitsException(ErrorCode error) {
         super(error);
     }
