@@ -31,8 +31,8 @@ public class UserCreateService {
 
         User newUser = User.builder()
                 .username(signUpRequest.getUsername())
-                .firstname(signUpRequest.getFirstname())
-                .lastname(signUpRequest.getLastname())
+                .firstName(signUpRequest.getFirstname())
+                .lastName(signUpRequest.getLastname())
                 .email(signUpRequest.getEmail())
                 .password(bCryptPasswordEncoder.encode(signUpRequest.getPassword()))
                 .rol(Rol.valueOf(signUpRequest.getRol()))

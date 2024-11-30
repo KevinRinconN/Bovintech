@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/bovintech
     username: root
-    password: Pfdk_09.26
+    password: Pfdk?09.26
   jpa:
     hibernate:
       ddl-auto: update
@@ -11,5 +11,10 @@ spring:
       on-profile: dev
 server:
   port: 8080
+
+cloudinary:
+  cloud-name: dwyriyoil
+  api-key: 172474118988483
+  api-secret: b-P6NHWLTPrR1qd7sXL0daLNowI
 
 

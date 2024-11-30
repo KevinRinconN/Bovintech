@@ -4,7 +4,7 @@ import com.bovintech.versionone.domain.event.usecases.EventDeleteByIdUseCase;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class EventDeleteService {
+public class EventDeleteByIdService {
     private final EventDeleteByIdUseCase eventDeleteByIdUseCase;
 
     public void execute (Long id){

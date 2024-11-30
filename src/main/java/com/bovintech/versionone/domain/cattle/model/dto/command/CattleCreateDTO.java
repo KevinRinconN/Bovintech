@@ -3,24 +3,24 @@ package com.bovintech.versionone.domain.cattle.model.dto.command;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.springframework.cglib.core.Local;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class CattleCreateDTO {
 
     @NotNull(message = "dateOfBirth is required")
     @Past(message = "Date of birth must be in the past")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     @JsonProperty("date_of_birth")
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
 
     @NotEmpty(message = "Distinctive trait is required")
     @Size(min = 3, max = 255, message = "Distinctive trait must be between 3 and 255 characters")

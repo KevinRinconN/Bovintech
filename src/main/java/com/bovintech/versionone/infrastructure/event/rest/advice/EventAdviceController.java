@@ -1,4 +1,4 @@
-package com.bovintech.versionone.infrastructure.event.advice;
+package com.bovintech.versionone.infrastructure.event.rest.advice;
 
 import com.bovintech.versionone.domain.cattle.model.exception.CattleNotFoundException;
 import com.bovintech.versionone.domain.event.model.exception.EventBadRequest;

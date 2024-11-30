@@ -5,29 +5,171 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07358a09-206a-4353-a913-b691ee778181" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/command/CattleCreateHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/query/CattleAllHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/constant/CattleErrorCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/Cattle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/command/CattleCreateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/query/CattleSearchParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/exception/CattleBadRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/exception/CattleNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/port/repository/ICattleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/CattleAllService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/CattleCreateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/beanconfiguration/CattleBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/ICattleJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/repository/CattleRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/specification/CattleSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/mapper/CattleDboMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/model/entity/CattleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/rest/advice/CattleControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/rest/controller/CattleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/auth/UserConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/bean/CattleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/command/BirthCreateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/command/CattleRecordBirthHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/command/LotGetAllByOperatorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/command/LotGetAllHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/query/CattleGetByIdHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/query/CattleGetOffSpringHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/query/CattleGetOngoingBirthHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/event/bean/EventConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/event/command/EventCreateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/event/command/EventDeleteByIdHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/event/command/EventUpdateStatusHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/event/query/EventFinAllHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/log/bean/logConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/log/command/LoggerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/log/query/LogGetAllHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/record/bean/RecordConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/record/command/CreateRecordHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/record/query/RecordGetByCattleIdHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/record/query/RecordGetPerMonthHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/service/UserGetOperatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/usecases/OperatorGetAllByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/usecases/UserGetByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/mapper/BirthMapperDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/mapper/CattleMapperDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/mapper/LotMapperDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/constant/BirthStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/Birth/BirthCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/Birth/BirthDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/Birth/BirthRecords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/CattleBirthRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/CattleParentShowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/CattleShowByIdDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/CattleShowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/CattleWithOutRelationsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/LotCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/LotDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/LotShowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/port/repository/IBirthRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/port/repository/ILotRespository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/CattleGetByIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/CattleGetOffSpringService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/CattleGetOngoingBirthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/LotGetAllByOperatorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/LotGetAllService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/BirthCreateUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/BirthGetByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleGetAllByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleGetAllUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleGetByIdDamUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleGetByIdSireUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleGetByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleGetOffSpringUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleGetOngoingBirthUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/CattleRegisterBirthUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/LotCreateUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/LotGetAllByOperatorUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/LotGetAllListUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/usecases/LotGetAllUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/mapper/EventMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/constant/EventStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/constant/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/dto/DayEventsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/dto/EventCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/dto/EventDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/dto/EventGetSearchParamsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/dto/EventToShowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/dto/MonthlyEventsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/exception/EventBadRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/model/exception/EventNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/port/respository/IEventRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/services/EventCreateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/services/EventDeleteByIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/services/EventFinAllService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/services/EventUpdateStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/usecases/EventCreateUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/usecases/EventDeleteByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/usecases/EventFindAllUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/usecases/EventGetByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/event/usecases/EventUpdateStatusUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/file/CloudinaryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/file/usecases/FileUploadUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/mapper/LogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/model/constant/ActionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/model/constant/ModuleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/model/dto/LogDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/model/dto/LogGetDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/model/dto/LogSearchParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/port/repository/LogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/services/LogGetAllService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/useCases/LogGetAllUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/log/useCases/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/RecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/model/dto/CreateRecordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/model/dto/MaxWeightPerMonthDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/model/dto/Record.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/model/dto/ShowRecordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/port/repository/IRecordRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/services/CreateRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/services/RecordGetByCattleIdService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/services/RecordGetPerMonthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/usecases/CreateRecordUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/record/usecases/RecordGetByCattleIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/IBirthJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/ILotJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/repository/BirthRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/repository/LotRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/mapper/BirthDboMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/mapper/LotDboMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/model/entity/BirthEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/model/entity/CattleLotEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/event/adapter/jpa/EventRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/event/adapter/jpa/IEventJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/event/adapter/mapper/EventMapperRep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/event/adapter/model/EventEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/event/adapter/specificacion/EventSpecifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/event/rest/advice/EventAdviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/event/rest/controller/EventController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/log/adapter/jpa/ILogJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/log/adapter/jpa/LogReppositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/log/adapter/mapper/LogDboMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/log/adapter/model/LogEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/log/adapter/specificacion/LogSpecificacions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/log/rest/controller/LogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/record/adapter/jpa/IRecordJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/record/adapter/jpa/RecordRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/record/adapter/mapper/RecordMapperRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/record/adapter/model/RecordEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/record/rest/controller/RecordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/util/ResponseFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/version-one.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/model/exception/UserAlreadyExitsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/model/exception/UserAlreadyExitsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/auth/mapper/UserRestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/auth/mapper/UserRestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/query/CattleAllHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/application/cattle/query/CattleAllHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/model/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/model/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/port/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/port/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/service/UserCreateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/auth/service/UserCreateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/constant/CattleErrorCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/constant/CattleErrorCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/Cattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/Cattle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/command/CattleCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/command/CattleCreateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/query/CattleSearchParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/model/dto/query/CattleSearchParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/port/repository/ICattleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/port/repository/ICattleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/CattleAllService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/domain/cattle/service/CattleAllService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/jpa/UserJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/jpa/UserJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/jpa/repository/UserRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/jpa/repository/UserRepositoryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/mapper/UserDboMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/mapper/UserDboMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/model/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/model/response/UserRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/adapter/model/response/UserRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/rest/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/auth/rest/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/beanconfiguration/CattleBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/beanconfiguration/CattleBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/ICattleJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/ICattleJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/repository/CattleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/repository/CattleRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/specification/CattleSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/jpa/specification/CattleSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/mapper/CattleDboMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/mapper/CattleDboMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/model/entity/CattleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/adapter/model/entity/CattleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/rest/controller/CattleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/cattle/rest/controller/CattleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/util/ResponseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bovintech/versionone/infrastructure/util/ResponseHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +189,28 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="version-one" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="version-one" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="version-one" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="version-one" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -57,8 +220,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Exception" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -84,10 +248,17 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.VersionOneApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Bovintech [:com.bovintech.versionone.VersionOneApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Bovintech [build clean].executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Bovintech [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Bovintech [clean build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.version-one [dependencies].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kevin/Downloads/University/9_semestre/proyect/bovintech/backend/Bovintech&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kevin/Documents/work/proyects/ESPERAR/app-back-esperar/esperar_app_back_java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -97,6 +268,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Kevin\Downloads\University\9_semestre\proyect\bovintech\backend\version-one\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bovintech.versionone.infrastructure.util" />
     </key>
   </component>
   <component name="RunManager" selected="Application.VersionOneApplication">
@@ -112,6 +286,74 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Bovintech [build clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bovintech [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bovintech [clean build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="version-one [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -137,7 +379,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Bovintech [build]" />
+        <item itemvalue="Gradle.Bovintech [build clean]" />
         <item itemvalue="Gradle.version-one [dependencies]" />
+        <item itemvalue="Gradle.Bovintech [clean build]" />
         <item itemvalue="Application.VersionOneApplication" />
       </list>
     </recent_temporary>
@@ -151,6 +396,15 @@
       <option name="presentableId" value="Default" />
       <updated>1714862413110</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1723515385557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723515385557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,5 +417,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/version_one$Bovintech__build_clean_.ic" NAME="Bovintech [build clean] Coverage Results" MODIFIED="1730913181636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

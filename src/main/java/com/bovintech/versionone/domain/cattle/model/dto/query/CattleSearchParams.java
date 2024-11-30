@@ -5,11 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 public class CattleSearchParams {
+    private Long lotId;
     private String gender;
-    private String breed;
+    private List<String> breed;
+    private String brand;
+
 }

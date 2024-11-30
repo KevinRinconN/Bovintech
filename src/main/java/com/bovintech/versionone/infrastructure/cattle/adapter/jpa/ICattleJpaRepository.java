@@ -8,4 +8,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 public interface ICattleJpaRepository extends JpaRepository<CattleEntity, Long> , JpaSpecificationExecutor<CattleEntity> {
     Page<CattleEntity> findByGender(String gender, Pageable pageable);
+    Page<CattleEntity> findBySireIdOrDamId(Long sireId, Long damId, Pageable pageable);
+
 }

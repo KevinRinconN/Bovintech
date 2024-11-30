@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Repository
 @RequiredArgsConstructor
@@ -29,6 +30,11 @@ public class UserRepositoryImp implements UserRepository {
         var optionalUser = userJpaRepository.findByEmail(email);
 
         return optionalUser.map(userDboMapper::toDomain);
+    }
+
+    @Override
+    public List<User> findAllById(List<String> usernames) {
+        return userJpaRepository.findAllById(usernames).stream().map(userDboMapper::toDomain).collect(Collectors.toList());
     }
 
     @Override

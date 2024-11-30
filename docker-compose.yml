@@ -19,3 +19,7 @@ services:
     environment:
       MYSQL_DATABASE: bovintech
       MYSQL_ROOT_PASSWORD: Pfdk_09.26
+cloudinary:
+  cloud-name: dwyriyoil
+  api-key: 172474118988483
+  api-secret: b-P6NHWLTPrR1qd7sXL0daLNowI

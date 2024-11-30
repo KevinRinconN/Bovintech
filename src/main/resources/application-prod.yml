@@ -8,8 +8,11 @@ spring:
       ddl-auto: update
   config:
     activate:
-      on-profile: dev
+      on-profile: prod
 server:
   port: 8080
 
-
+cloudinary:
+  cloud-name: dwyriyoil
+  api-key: 172474118988483
+  api-secret: b-P6NHWLTPrR1qd7sXL0daLNowI

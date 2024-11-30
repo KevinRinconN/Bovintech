@@ -1,9 +1,11 @@
 package com.bovintech.versionone.infrastructure.cattle.adapter.model.entity;
 
-import com.bovintech.versionone.domain.cattle.model.dto.Cattle;
+import com.bovintech.versionone.infrastructure.event.adapter.model.EventEntity;
+import com.bovintech.versionone.infrastructure.record.adapter.model.RecordEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -12,7 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-
+@ToString
 @Entity
 @Table(name = "cattle")
 public class CattleEntity {
@@ -21,7 +23,7 @@ public class CattleEntity {
     private Long id;
     @Temporal(TemporalType.DATE)
     @Column(name = "date_of_birth", nullable = false)
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
     @Column(name = "distinctive_trait")
     private String distinctiveTrait;
     @Column(nullable = false)
@@ -40,5 +42,21 @@ public class CattleEntity {
 
     @OneToMany(mappedBy = "sire", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CattleEntity> offspring;
+
+    @OneToMany(mappedBy = "dam", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<CattleEntity> offspringDam;
+
+    @OneToMany(mappedBy = "cattle", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<RecordEntity> records;
+
+    @ManyToMany(mappedBy = "cattle")
+    private List<EventEntity> events;
+
+    @OneToMany(mappedBy = "dam", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<BirthEntity> births;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "lot_id")
+    private CattleLotEntity lot;
 
 }

@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 public interface UserRestMapper {
 
     @Mapping(source = "username", target = "username")
-    @Mapping(source = "firstname", target = "firstname")
-    @Mapping(source = "lastname", target = "lastname")
+    @Mapping(source = "firstName", target = "firstName")
+    @Mapping(source = "lastName", target = "lastName")
     @Mapping(source = "email", target = "email")
     @Mapping(source = "rol", target = "rol")
     UserRest toRest(User domain);

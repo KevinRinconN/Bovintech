@@ -9,6 +9,7 @@ import java.util.Optional;
 public interface UserRepository {
     Optional<User> getById(String username);
     Optional<User> getByEmail(String email);
+    List<User> findAllById (List<String> usernames);
     List<User> getAll();
     User create(User request);
     void deleteById(Long id);

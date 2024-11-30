@@ -5,6 +5,9 @@ import com.bovintech.versionone.domain.util.ErrorCode;
 public enum CattleErrorCatalog implements ErrorCode {
     CATTLE_SIRE_NOT_FOUND("CSNF", "El padre no fue encontrado"),
     CATTLE_DAM_NOT_FOUND("CDNF", "La madre no fue encontrada"),
+    CATTLE_NO_ONGOING_BIRTH("CNOB","Parto no encontrado"),
+    CATTLE_NO_ONGOING_BIRTH_IN_PROCESS("CNOBIP","El bovino tiene un Parto en proceso"),
+    CATTLE_NOT_FOUND("CDNF", "El bovino no fue encontrado"),
     CATTLE_MUST_BE_SIRE("CMBS","El padre debería ser macho"),
     CATTLE_MUST_BE_DAM("CMBD", "La madre debería ser hembra");
 
